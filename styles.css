@@ -1,0 +1,99 @@
+body {
+	background-color: darkgrey;
+	font-family: calibri;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.head {
+	background-color: black;
+	color: lightgrey;
+	text-align: center;
+	padding: 15px;
+}
+.main {
+	background-color: grey;
+	min-height: 700px;
+	padding: 20px;
+}
+.main button {
+	margin: 0 0 10px 10%;
+	font-size: 1.2em;
+	padding: 5px;
+}
+.main table {
+	background-color: white;
+	margin: auto;
+	width: 80%;
+	border: 2px solid black;
+	text-align: center;
+}
+.main table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	cursor: context-menu;
+}
+.main table th {
+	font-size: 1.2em;
+	padding: 4px 0px;
+}
+.main table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+.edit {
+	cursor: pointer;
+	color: blue;
+}
+#filter {
+	float: right;
+	margin-right: 10%;
+	padding: 4px;
+}
+#inputDataPage {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .8;
+}
+/*#inputDataPage,
+#inputDataPage :not(div.form-wrapper) {
+	
+}*/
+div.form-wrapper {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 25%;
+	background-color: white;
+	opacity: 1 !important;
+	width: 40%;
+	min-height: 400px;
+	margin: 100px auto;
+	border: 1px solid black;
+	text-align: center;
+	padding: 30px;
+	z-index: 10;
+}
+
+#buttonOff {
+	float: right;
+}
+div.form-wrapper form table{
+	width: 100%;
+	padding-top: 50px;
+	border: 5px;
+}
+div.form-wrapper form table input {
+	width: 95%;
+	padding: 5px;
+}
+#unesi {
+	font-size: 1.3em;
+	padding: 5px;
+	margin-top: 5px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imenik dobavljača</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="functions.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			<h1>Imenik dobavljača</h1>
+		</div>
+		<div class="main">
+			 <button id="buttonOn">Novi dobavljač</button>
+			 <input type="text" name="" id="filter" placeholder="pretraži...">
+			 <table id="table">
+			 	<thead>
+				 	<tr>
+					 	<th>Naziv</th>
+					 	<th>Napomena</th>
+					 	<th>Telefon</th>
+					 	<th>Adresa</th>
+					 	<th>mail</th>
+					 	<th>Kontakt osoba</th>
+					 	<th colspan="2">Uredi</th>
+				 	</tr>
+				 </thead>
+				 <tbody>	
+			 	<?php 
+			 		foreach ($imenik->data as $key => $row) {
+			 	?>
+			 			<tr>
+			 				<td><?php echo $imenik->data[$key]->Naziv ?></td>
+			 				<td><?php echo $imenik->data[$key]->Napomena ?></td>
+			 				<td><?php echo $imenik->data[$key]->Telefon ?></td>
+			 				<td><?php echo $imenik->data[$key]->Adresa ?></td>
+			 				<td><?php echo $imenik->data[$key]->mail ?></td>
+			 				<td><?php echo $imenik->data[$key]->Kontakt_osoba ?></td>
+			 				<td><span class="edit">Edit</span></td>
+			 				<td><span class="edit">Delete</span></td>		 				
+			 			<tr>
+			 	<?php
+			 		}
+			 	 ?>
+			 	</tbody> 
+			 </table>
+		</div>
+		<div id="inputDataPage">
+			
+		</div>
+		<div class="form-wrapper">	
+				 <button id="buttonOff">X</button>
+				<form method="post">
+					<table>
+						<tr>
+							<td><label>Naziv dobavljača:</label></td>
+							<td><input type="text" name="naziv"></td>
+						</tr>
+						<tr>
+							<td><label>Napomena: </label></td>
+							<td><input type="text" name="napomena"></td>
+						</tr>
+						<tr>
+							<td><label>Telefon: </label></td>
+							<td><input type="text" name="telefon"></td>
+						</tr>
+						<tr>
+							<td><label>Adresa: </label></td>
+							<td><input type="text" name="adresa"></td>
+						</tr>
+						<tr>
+							<td><label>e-mail: </label></td>
+							<td><input type="text" name="email"></td>
+						</tr>
+						<tr>
+							<td><label>Kontakt osoba: </label></td>
+							<td><input type="text" name="kontakt"></td>
+						</tr>
+					</table>
+						<input type="submit" id="unesi" value="Unesi">
+				</form>
+			</div>	
+	</div>
+</body>
+</html>
