@@ -21,7 +21,7 @@
 					 	<th>Napomena</th>
 					 	<th>Telefon</th>
 					 	<th>Adresa</th>
-					 	<th>mail</th>
+					 	<th>e-mail</th>
 					 	<th>Kontakt osoba</th>
 					 	<th colspan="2">Uredi</th>
 				 	</tr>
@@ -33,9 +33,9 @@
 			 			<tr>
 			 				<td><?php echo $imenik->data[$key]->Naziv ?></td>
 			 				<td><?php echo $imenik->data[$key]->Napomena ?></td>
-			 				<td><?php echo $imenik->data[$key]->Telefon ?></td>
+			 				<td><b><?php echo $imenik->data[$key]->Telefon ?></b></td>
 			 				<td><?php echo $imenik->data[$key]->Adresa ?></td>
-			 				<td><?php echo $imenik->data[$key]->mail ?></td>
+			 				<td><a href="mailto:<?php echo $imenik->data[$key]->mail ?>"><?php echo $imenik->data[$key]->mail ?></a></td>
 			 				<td><?php echo $imenik->data[$key]->Kontakt_osoba ?></td>
 			 				<td><span class="edit">Edit</span></td>
 			 				<td><span class="edit">Delete</span></td>		 				

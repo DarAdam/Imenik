@@ -60,10 +60,6 @@ body {
 	background-color: black;
 	opacity: .8;
 }
-/*#inputDataPage,
-#inputDataPage :not(div.form-wrapper) {
-	
-}*/
 div.form-wrapper {
 	display: none;
 	position: fixed;
